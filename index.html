@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Carreras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <p id="score">Puntos: 0</p>
+            <p id="highScore">Mejor Puntuación: 0</p>
+            <button id="pauseButton">Pausar</button>
+            <button id="restartButton" class="hidden">Reiniciar Juego</button>
+        </div>
+        <!-- Botones táctiles -->
+        <div class="controls">
+            <button id="upButton">↑</button>
+            <div class="horizontal-controls">
+                <button id="leftButton">←</button>
+                <button id="rightButton">→</button>
+            </div>
+            <button id="downButton">↓</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
